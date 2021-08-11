@@ -15,7 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-		// Override point for customization after application launch.
+        
+        //Programmatic Launch 
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let rootVC = UINavigationController(rootViewController: TimelineViewController())
+        
+        self.window?.rootViewController = rootVC
+        self.window?.makeKeyAndVisible()
 		return true
 	}
 

@@ -28,9 +28,14 @@ class OpenTweetUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testTweetScreen() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        let hoverButton = app.buttons["hoverButton"].tap()
+        let tweetButton = app.buttons["Send My Tweet!"].tap()
+        app.alerts["Oops! Not backend yet. Let's add your name to the feaure interaction list 😄"].scrollViews.otherElements.buttons["OK"].tap()
+        app.staticTexts["Send Your First Tweet!"].swipeDown()
     }
-    
 }
