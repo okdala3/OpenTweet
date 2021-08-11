@@ -76,7 +76,7 @@ class TweetViewController: UIViewController, UITextFieldDelegate {
     }
     
     func fireAlert() {
-        let alert = UIAlertController(title: "Oops! Not backend yet. Let's add your name to the feaure interaction list 😄", message: nil, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Oops! Not backend yet. Let's add your name to the feature interaction list 😄", message: nil, preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
